@@ -1,0 +1,392 @@
+[
+  {
+    "id": "t001",
+    "text": "i feel like i love everyone or at least i am compassionate toward others",
+    "gold_label": "love"
+  },
+  {
+    "id": "t002",
+    "text": "i said without emotion while feeling a freaked out fearful anxiety welling up in my chest",
+    "gold_label": "fear"
+  },
+  {
+    "id": "t003",
+    "text": "i feel stupid about my diamond richie mix up",
+    "gold_label": "sadness"
+  },
+  {
+    "id": "t004",
+    "text": "i just feel terrified like im on the edge of a precipice staring ahead",
+    "gold_label": "fear"
+  },
+  {
+    "id": "t005",
+    "text": "i feel so frustrated but i cant tell them i am",
+    "gold_label": "anger"
+  },
+  {
+    "id": "t006",
+    "text": "i still feel so amazed knowing i stood right in front of jason",
+    "gold_label": "surprise"
+  },
+  {
+    "id": "t007",
+    "text": "i was feeling irritated with the supposed guy who wasting my valuable time talking to a lady",
+    "gold_label": "anger"
+  },
+  {
+    "id": "t008",
+    "text": "i woke up feeling very distraught and aware of something terrible which will happen soon",
+    "gold_label": "fear"
+  },
+  {
+    "id": "t009",
+    "text": "i remember looking out car windows as i was passengered around those first few months and feeling vaguely surprised as i was already deep in shock at how different things looked",
+    "gold_label": "surprise"
+  },
+  {
+    "id": "t010",
+    "text": "im feeling quite pleased with myself i spent minutes on the cross trainer and then two lots of minutes on the vibration plate just to test out the programs of course",
+    "gold_label": "joy"
+  },
+  {
+    "id": "t011",
+    "text": "i was a little teary and feeling a little sorry for myself",
+    "gold_label": "sadness"
+  },
+  {
+    "id": "t012",
+    "text": "i would feel resentful toward patrick because i couldnt read avery her nightly books with just her and me",
+    "gold_label": "anger"
+  },
+  {
+    "id": "t013",
+    "text": "i feel so grouchy and irritable when im sick",
+    "gold_label": "anger"
+  },
+  {
+    "id": "t014",
+    "text": "i was expecting to say this is a very bittersweet feeling but all im feeling is bitter",
+    "gold_label": "anger"
+  },
+  {
+    "id": "t015",
+    "text": "im back to watching running man and i love it i got back the feeling of why i loved running man",
+    "gold_label": "love"
+  },
+  {
+    "id": "t016",
+    "text": "i am pinned as the culprit of digging out their inferiority and made them feel useless again",
+    "gold_label": "sadness"
+  },
+  {
+    "id": "t017",
+    "text": "i feel pretty virtuous about it actually",
+    "gold_label": "joy"
+  },
+  {
+    "id": "t018",
+    "text": "i feel instantly glamorous just pulling it out of my handbag and sachaying it about for all to see",
+    "gold_label": "joy"
+  },
+  {
+    "id": "t019",
+    "text": "i feel a little pained but that will probably pass the last illusions of childhood",
+    "gold_label": "sadness"
+  },
+  {
+    "id": "t020",
+    "text": "i strongly dislike feeling stupid which is a feeling that comes up for me at least once per day and often more frequently than that",
+    "gold_label": "sadness"
+  },
+  {
+    "id": "t021",
+    "text": "i guess i am just feeling slightly shaken at this sudden news",
+    "gold_label": "fear"
+  },
+  {
+    "id": "t022",
+    "text": "ive done all my usual workouts and so i feel confident that i worked hard on that front",
+    "gold_label": "joy"
+  },
+  {
+    "id": "t023",
+    "text": "i wont go on about the anxieties i am feeling about this is being as neurotic as me about this",
+    "gold_label": "fear"
+  },
+  {
+    "id": "t024",
+    "text": "i feel that he was desperately fond of me",
+    "gold_label": "love"
+  },
+  {
+    "id": "t025",
+    "text": "i saw them that anything was wrong they told me some excuses but i am feeling truly insulted and i am feeling desperate again",
+    "gold_label": "anger"
+  },
+  {
+    "id": "t026",
+    "text": "i do feel very contented with this simple homely life",
+    "gold_label": "joy"
+  },
+  {
+    "id": "t027",
+    "text": "i get home i laze around in my pajamas feeling grouchy",
+    "gold_label": "anger"
+  },
+  {
+    "id": "t028",
+    "text": "i think of how much time we spent just doing fun childhood stuff together as a family i feel amazed",
+    "gold_label": "surprise"
+  },
+  {
+    "id": "t029",
+    "text": "im not as mad and upset as i was on day but i feel scared now",
+    "gold_label": "fear"
+  },
+  {
+    "id": "t030",
+    "text": "id like to write something interesting right now but unfortunately i feel deprived of inspiration",
+    "gold_label": "sadness"
+  },
+  {
+    "id": "t031",
+    "text": "im feeling quite disillusioned about my weighins",
+    "gold_label": "sadness"
+  },
+  {
+    "id": "t032",
+    "text": "i might feel a bit proud if i had one on my left wrist as this is a turbillion watch made in hong kong",
+    "gold_label": "joy"
+  },
+  {
+    "id": "t033",
+    "text": "i am a very generous person in that i give quality time and make people feel special",
+    "gold_label": "joy"
+  },
+  {
+    "id": "t034",
+    "text": "im lying in bed feeling very anxious and have a knot in my stomach",
+    "gold_label": "fear"
+  },
+  {
+    "id": "t035",
+    "text": "i feel passionate about sharing it with you",
+    "gold_label": "love"
+  },
+  {
+    "id": "t036",
+    "text": "i love and feel passionate about i m living my dream and now that i ve gotten a taste of what that feels like nothing can stop me",
+    "gold_label": "love"
+  },
+  {
+    "id": "t037",
+    "text": "i even started feeling impatient with myself when that didn t exactly happen",
+    "gold_label": "anger"
+  },
+  {
+    "id": "t038",
+    "text": "i was feeling isolated lonely and misunderstood",
+    "gold_label": "sadness"
+  },
+  {
+    "id": "t039",
+    "text": "i feel very stunned that people got it in a big way",
+    "gold_label": "surprise"
+  },
+  {
+    "id": "t040",
+    "text": "i feel like i was lucky like a four leaf clover",
+    "gold_label": "joy"
+  },
+  {
+    "id": "t041",
+    "text": "im feeling so pissed off that i wanna scream and shout at the wall facing me right now",
+    "gold_label": "anger"
+  },
+  {
+    "id": "t042",
+    "text": "i can feel something inside me something delicate and peaceful unfurling inside my chest",
+    "gold_label": "love"
+  },
+  {
+    "id": "t043",
+    "text": "im feeling a little impressed at their creativity",
+    "gold_label": "surprise"
+  },
+  {
+    "id": "t044",
+    "text": "i feel like im being taken advantage of and on top of that i am really bothered by my boyfriends sloppy behaviors",
+    "gold_label": "anger"
+  },
+  {
+    "id": "t045",
+    "text": "i sure know where to come if i m feeling a little tender",
+    "gold_label": "love"
+  },
+  {
+    "id": "t046",
+    "text": "i will say that i am satisfied with my draw and feel that it is a perfect fit",
+    "gold_label": "joy"
+  },
+  {
+    "id": "t047",
+    "text": "i find it hard to breathe and sometimes feel a little shaken up by the days events",
+    "gold_label": "fear"
+  },
+  {
+    "id": "t048",
+    "text": "i am close to her i get this complete fuzzy loved feeling grew so fond of",
+    "gold_label": "love"
+  },
+  {
+    "id": "t049",
+    "text": "i had been really proud of myself but after how my husband had talked to me and talked about other girls i was really feeling disgusted about myself",
+    "gold_label": "anger"
+  },
+  {
+    "id": "t050",
+    "text": "i found the art at the other side of all i feel very impressed with my work",
+    "gold_label": "surprise"
+  },
+  {
+    "id": "t051",
+    "text": "i feel this piece is extremely resolved and cohesive making it one of the most successful arist s books i have ever seen and experienced",
+    "gold_label": "joy"
+  },
+  {
+    "id": "t052",
+    "text": "i feel that i have so much to do to make a positive impact on this world we live in",
+    "gold_label": "joy"
+  },
+  {
+    "id": "t053",
+    "text": "i feel that they were just as surprised to be sharing my dream as i was to have them sharing it",
+    "gold_label": "surprise"
+  },
+  {
+    "id": "t054",
+    "text": "i kept waiting to feel the water and when i did i was surprised at the velocity i gained",
+    "gold_label": "surprise"
+  },
+  {
+    "id": "t055",
+    "text": "i most want to do better think harder feel more and be more tender",
+    "gold_label": "love"
+  },
+  {
+    "id": "t056",
+    "text": "i can genuinely say from the bottom of my heart that i feel absolutely thankful",
+    "gold_label": "joy"
+  },
+  {
+    "id": "t057",
+    "text": "i lay here still awake i find myself feeling unhappy",
+    "gold_label": "sadness"
+  },
+  {
+    "id": "t058",
+    "text": "i had been feeling scared about being an ra because there is a lot of work that goes into that job",
+    "gold_label": "fear"
+  },
+  {
+    "id": "t059",
+    "text": "i used to share my feeling and thought all to my lovely roomates shermin and joey",
+    "gold_label": "love"
+  },
+  {
+    "id": "t060",
+    "text": "i find myself feeling surprised and totally unworthy whenever i see her face",
+    "gold_label": "surprise"
+  },
+  {
+    "id": "t061",
+    "text": "i feel like i broke all my rules and i won lots of battles other days i feel like nothing changed since days ago",
+    "gold_label": "sadness"
+  },
+  {
+    "id": "t062",
+    "text": "i feel horrible for making everyone else so worried",
+    "gold_label": "sadness"
+  },
+  {
+    "id": "t063",
+    "text": "i suppose thats why i feel so melancholy about the whole thing",
+    "gold_label": "sadness"
+  },
+  {
+    "id": "t064",
+    "text": "i hate feeling like this im always getting mad for no reason feeling lonely",
+    "gold_label": "anger"
+  },
+  {
+    "id": "t065",
+    "text": "i was feeling pretty terrified full of nervous energy",
+    "gold_label": "fear"
+  },
+  {
+    "id": "t066",
+    "text": "ive been reading again and feeling pleasantly surprised to find my reading list contained four similar books a fine chance to compare and contrast differ",
+    "gold_label": "surprise"
+  },
+  {
+    "id": "t067",
+    "text": "i feel loved and blessed thank you allah",
+    "gold_label": "love"
+  },
+  {
+    "id": "t068",
+    "text": "i feel like i shouldn t be that amazed with a degree in biology i was blown away",
+    "gold_label": "surprise"
+  },
+  {
+    "id": "t069",
+    "text": "i can easily wind up feeling inadequate as i look at all of the beautiful pictures and see what it seems like everyone else is doing and thinking",
+    "gold_label": "sadness"
+  },
+  {
+    "id": "t070",
+    "text": "i spent a lot of time feeling a bit stunned that they thought i was that awesome",
+    "gold_label": "surprise"
+  },
+  {
+    "id": "t071",
+    "text": "i guess i talked to enough people to realize that we all feel intimidated by meeting others for the first time",
+    "gold_label": "fear"
+  },
+  {
+    "id": "t072",
+    "text": "i feel accepted and respected i am loving loyal and generous",
+    "gold_label": "love"
+  },
+  {
+    "id": "t073",
+    "text": "i feel i am beyond pissed off disappointed frustrated with myself",
+    "gold_label": "anger"
+  },
+  {
+    "id": "t074",
+    "text": "i feel afraid to live alone living far from them",
+    "gold_label": "fear"
+  },
+  {
+    "id": "t075",
+    "text": "im trying to find ways to add more sewing into my schedule without feeling completely overwhelmed",
+    "gold_label": "fear"
+  },
+  {
+    "id": "t076",
+    "text": "im feeling so invigorated and ready for whats ahead and very excited to share all that information with all of you",
+    "gold_label": "joy"
+  },
+  {
+    "id": "t077",
+    "text": "i feel wholly and completely loved well most days",
+    "gold_label": "love"
+  },
+  {
+    "id": "t078",
+    "text": "i keep feeling pleasantly surprised at his supportiveness and also his ease in new situations",
+    "gold_label": "surprise"
+  }
+]
