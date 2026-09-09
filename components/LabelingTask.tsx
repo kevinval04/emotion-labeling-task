@@ -32,8 +32,7 @@ export default function LabelingTask({
   const [error, setError] = useState<string | null>(null);
 
   const total = tweets.length;
-  const done = index >= total;
-  const tweet = done ? null : tweets[index];
+  const tweet = tweets[index];
 
   async function submit() {
     if (!selected || !tweet) return;
@@ -56,8 +55,7 @@ export default function LabelingTask({
         const data = await res.json().catch(() => ({}));
         throw new Error(data.error ?? "Could not save that answer.");
       }
-      // Only advance once the answer is safely stored, so a failed write
-      // never silently loses a judgment.
+      // Advance only after the answer is stored, so a failed write is retryable.
       setIndex(index + 1);
       setSelected(null);
     } catch (e) {
@@ -67,7 +65,7 @@ export default function LabelingTask({
     }
   }
 
-  if (done) {
+  if (!tweet) {
     return (
       <div className={styles.done}>
         <h2>All done — thank you</h2>
@@ -92,7 +90,7 @@ export default function LabelingTask({
       </div>
 
       <div className={styles.card}>
-        <p className={styles.tweet}>{tweet!.text}</p>
+        <p className={styles.tweet}>{tweet.text}</p>
       </div>
 
       <p className={styles.question} id="prompt">

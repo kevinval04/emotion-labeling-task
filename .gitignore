@@ -6,9 +6,11 @@ data/raw/
 __pycache__/
 *.pyc
 
-# Node / Next.js (used from Phase 2 onward)
+# Node / Next.js
 node_modules/
 .next/
+next-env.d.ts
+*.tsbuildinfo
 out/
 .vercel/
 

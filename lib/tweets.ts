@@ -6,21 +6,13 @@ export type Tweet = {
   gold_label: string;
 };
 
-/** The full dataset, including gold labels. Server-side only. */
-export const ALL_TWEETS = tweetsData as Tweet[];
-
-/** What a participant is allowed to see: no gold label. */
 export type PublicTweet = Pick<Tweet, "id" | "text">;
+
+// Carries gold labels. Server-side only.
+export const ALL_TWEETS = tweetsData as Tweet[];
 
 export const TWEETS_PER_SESSION = 5;
 
-/**
- * Draw tweets uniformly at random without replacement.
- *
- * Deliberately not stratified by emotion: guaranteeing one tweet per category
- * would let a participant infer that every set contains all six, which would
- * bias their answers on the later items.
- */
 export function drawTweets(n = TWEETS_PER_SESSION): PublicTweet[] {
   const pool = [...ALL_TWEETS];
   for (let i = pool.length - 1; i > 0; i--) {

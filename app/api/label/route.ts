@@ -1,12 +1,16 @@
 import { NextResponse } from "next/server";
-import { supabase } from "@/lib/supabase";
-import { EMOTIONS, type Emotion } from "@/lib/supabase";
-import { ALL_TWEETS, TWEETS_PER_SESSION } from "@/lib/tweets";
+import { supabase, EMOTIONS, type Emotion } from "@/lib/supabase";
+import { ALL_TWEETS } from "@/lib/tweets";
 
 const VALID_TWEET_IDS = new Set(ALL_TWEETS.map((t) => t.id));
 
 export async function POST(request: Request) {
-  let body: { sessionId?: string; tweetId?: string; label?: string; isLast?: boolean };
+  let body: {
+    sessionId?: string;
+    tweetId?: string;
+    label?: string;
+    isLast?: boolean;
+  };
   try {
     body = await request.json();
   } catch {
@@ -43,11 +47,9 @@ export async function POST(request: Request) {
       .update({ completed_at: new Date().toISOString() })
       .eq("id", sessionId);
     if (completeError) {
-      // The labels are already saved, so this is not worth failing the
-      // request over -- it only affects completion reporting.
       console.error("Failed to mark session complete:", completeError);
     }
   }
 
-  return NextResponse.json({ ok: true, remaining: TWEETS_PER_SESSION });
+  return NextResponse.json({ ok: true });
 }

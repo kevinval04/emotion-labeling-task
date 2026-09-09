@@ -13,27 +13,24 @@ const DEFINITIONS: [string, string][] = [
 ];
 
 type Props = {
-  /** "intro" gates the task and must be dismissed with Start.
-   *  "review" is the reopened copy during labeling and can just be closed. */
   mode: "intro" | "review";
   starting?: boolean;
   error?: string | null;
-  onStart: (displayName: string) => void;
-  onClose: () => void;
+  onStart?: (displayName: string) => void;
+  onClose?: () => void;
 };
 
 export default function InstructionsModal({
   mode,
   starting = false,
   error = null,
-  onStart,
-  onClose,
+  onStart = () => {},
+  onClose = () => {},
 }: Props) {
   const [name, setName] = useState("");
   const dialogRef = useRef<HTMLDivElement>(null);
 
-  // Escape closes the reopened copy, but not the intro: dismissing that one
-  // without starting would leave the participant on an empty screen.
+  // Not wired up for the intro: dismissing it would strand the participant.
   useEffect(() => {
     if (mode !== "review") return;
     const onKey = (e: KeyboardEvent) => {

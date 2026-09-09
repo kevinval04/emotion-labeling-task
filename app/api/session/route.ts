@@ -11,11 +11,11 @@ export async function POST(request: Request) {
       displayName = body.displayName.trim().slice(0, 80);
     }
   } catch {
-    // No body is fine -- the name is optional.
+    displayName = null;
   }
 
-  // The id is generated here rather than by the database: the publishable key
-  // has no SELECT policy, so an INSERT cannot return the new row.
+  // Generated here rather than by the database: with no SELECT policy an
+  // INSERT cannot return the new row.
   const sessionId = randomUUID();
   const tweets = drawTweets();
 
@@ -33,6 +33,5 @@ export async function POST(request: Request) {
     );
   }
 
-  // Gold labels are deliberately absent from this response.
   return NextResponse.json({ sessionId, tweets });
 }

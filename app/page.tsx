@@ -51,14 +51,12 @@ export default function Home() {
           starting={starting}
           error={error}
           onStart={handleStart}
-          onClose={() => {}}
         />
       )}
 
       {session && reviewing && (
         <InstructionsModal
           mode="review"
-          onStart={() => {}}
           onClose={() => setReviewing(false)}
         />
       )}
