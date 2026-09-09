@@ -1,9 +1,14 @@
 :root {
-  --bg: #ffffff;
-  --fg: #1a1a1a;
-  --muted: #6b6b6b;
-  --border: #e0e0e0;
-  --accent: #2563eb;
+  --paper: #faf8f3;
+  --card: #ffffff;
+  --tint: #f2efe6;
+  --ink: #26231d;
+  --ink-soft: #5f594e;
+  --muted: #8c8577;
+  --muted-light: #b5ad9c;
+  --line: #ebe5d9;
+  --line-strong: #e3dcce;
+  --field: #ded7c8;
 }
 
 * {
@@ -14,14 +19,29 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background: var(--bg);
-  color: var(--fg);
-  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: var(--paper);
+  color: var(--ink);
   line-height: 1.6;
 }
 
 main {
-  max-width: 680px;
+  max-width: 560px;
   margin: 0 auto;
-  padding: 2.5rem 1.25rem 4rem;
+  padding: 3rem 1.25rem 4rem;
+}
+
+button {
+  font-family: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }

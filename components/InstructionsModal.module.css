@@ -1,0 +1,146 @@
+.scrim {
+  position: fixed;
+  inset: 0;
+  background: rgba(38, 35, 29, 0.42);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.modal {
+  background: var(--paper);
+  border-radius: 14px;
+  width: 100%;
+  max-width: 460px;
+  box-shadow: 0 12px 40px rgba(38, 35, 29, 0.22);
+  overflow: hidden;
+  margin: auto;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1.15rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.eyebrow {
+  font-size: 0.688rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.close {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  line-height: 1;
+  color: var(--muted-light);
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+.close:hover {
+  color: var(--ink);
+}
+
+.body {
+  padding: 1.25rem 1.4rem;
+}
+
+.title {
+  font-size: 1.19rem;
+  font-weight: 700;
+  margin: 0 0 0.6rem;
+}
+
+.lede {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.sectionLabel {
+  font-size: 0.75rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 700;
+  margin: 1.25rem 0 0.55rem;
+}
+
+.row {
+  display: flex;
+  gap: 0.55rem;
+  font-size: 0.844rem;
+  line-height: 1.5;
+  margin-bottom: 0.45rem;
+}
+
+.row dt {
+  flex: none;
+  width: 4.2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.row dd {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.guidance {
+  font-size: 0.844rem;
+  color: var(--ink-soft);
+  margin: 1.1rem 0 0.6rem;
+}
+
+.privacy {
+  font-size: 0.813rem;
+  color: var(--muted);
+  margin: 0 0 1.1rem;
+}
+
+.field {
+  width: 100%;
+  padding: 0.625rem 0.75rem;
+  border: 1px solid var(--field);
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-family: inherit;
+  background: var(--card);
+  color: var(--ink);
+}
+
+.field:focus {
+  outline: 2px solid var(--ink);
+  outline-offset: 1px;
+}
+
+.foot {
+  padding: 0.85rem 1.4rem 1.15rem;
+  border-top: 1px solid var(--line);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.start {
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  background: var(--ink);
+  color: var(--paper);
+  cursor: pointer;
+}
+
+.start:hover {
+  background: #3a352c;
+}
