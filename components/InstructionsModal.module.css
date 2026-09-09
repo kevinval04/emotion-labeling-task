@@ -144,3 +144,15 @@
 .start:hover {
   background: #3a352c;
 }
+
+.error {
+  font-size: 0.813rem;
+  color: #9a2f2f;
+  margin: 0 1.4rem 0.6rem;
+}
+
+.start:disabled {
+  background: var(--line-strong);
+  color: var(--muted);
+  cursor: not-allowed;
+}

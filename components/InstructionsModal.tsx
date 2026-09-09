@@ -16,11 +16,19 @@ type Props = {
   /** "intro" gates the task and must be dismissed with Start.
    *  "review" is the reopened copy during labeling and can just be closed. */
   mode: "intro" | "review";
+  starting?: boolean;
+  error?: string | null;
   onStart: (displayName: string) => void;
   onClose: () => void;
 };
 
-export default function InstructionsModal({ mode, onStart, onClose }: Props) {
+export default function InstructionsModal({
+  mode,
+  starting = false,
+  error = null,
+  onStart,
+  onClose,
+}: Props) {
   const [name, setName] = useState("");
   const dialogRef = useRef<HTMLDivElement>(null);
 
@@ -59,7 +67,7 @@ export default function InstructionsModal({ mode, onStart, onClose }: Props) {
               onClick={onClose}
               aria-label="Close instructions"
             >
-              ✕
+              &#10005;
             </button>
           )}
         </div>
@@ -75,9 +83,9 @@ export default function InstructionsModal({ mode, onStart, onClose }: Props) {
 
           <p className={styles.sectionLabel}>The six emotions</p>
           <dl style={{ margin: 0 }}>
-            {DEFINITIONS.map(([name, meaning]) => (
-              <div key={name} className={styles.row}>
-                <dt>{name}</dt>
+            {DEFINITIONS.map(([term, meaning]) => (
+              <div key={term} className={styles.row}>
+                <dt>{term}</dt>
                 <dd>{meaning}</dd>
               </div>
             ))}
@@ -108,10 +116,20 @@ export default function InstructionsModal({ mode, onStart, onClose }: Props) {
           )}
         </div>
 
+        {error && (
+          <p className={styles.error} role="alert">
+            {error}
+          </p>
+        )}
+
         <div className={styles.foot}>
           {mode === "intro" ? (
-            <button className={styles.start} onClick={() => onStart(name.trim())}>
-              Start labeling
+            <button
+              className={styles.start}
+              disabled={starting}
+              onClick={() => onStart(name.trim())}
+            >
+              {starting ? "Starting…" : "Start labeling"}
             </button>
           ) : (
             <button className={styles.start} onClick={onClose}>

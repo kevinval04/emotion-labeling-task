@@ -1,0 +1,140 @@
+.progress {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.95rem;
+}
+
+.count {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.dots {
+  font-size: 0.75rem;
+  color: var(--muted-light);
+  letter-spacing: 0.15em;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 1.4rem 1.25rem;
+  margin-bottom: 1.35rem;
+}
+
+.tweet {
+  font-size: 1.06rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.question {
+  font-size: 0.813rem;
+  color: var(--muted);
+  margin: 0 0 0.7rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 420px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.option {
+  border-radius: 8px;
+  padding: 0.8rem 0.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  background: var(--card);
+  border: 1px solid var(--line-strong);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.option:hover {
+  border-color: var(--muted);
+}
+
+.option:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+
+.option[aria-pressed="true"] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper);
+}
+
+.submit {
+  border: none;
+  border-radius: 8px;
+  padding: 0.78rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  width: 100%;
+  background: var(--ink);
+  color: var(--paper);
+  cursor: pointer;
+}
+
+.submit:disabled {
+  background: var(--line-strong);
+  color: var(--muted);
+  cursor: not-allowed;
+}
+
+.error {
+  font-size: 0.813rem;
+  color: #9a2f2f;
+  margin: 0.7rem 0 0;
+}
+
+.footer {
+  margin-top: 1.6rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.link {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.813rem;
+  color: var(--muted);
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.link:hover {
+  color: var(--ink);
+}
+
+.done h2 {
+  font-size: 1.19rem;
+  font-weight: 700;
+  margin: 0 0 0.6rem;
+}
+
+.done p {
+  font-size: 0.875rem;
+  margin: 0 0 0.8rem;
+}
+
+.id {
+  font-size: 0.75rem;
+  color: var(--muted);
+  word-break: break-all;
+}
