@@ -4,7 +4,7 @@ A web interface where participants read five randomly selected tweets and label
 the emotion each expresses. CSE594 Human-AI Interaction, Assignment 1
 (A1-2).
 
-**Live task:** _(added after deployment)_
+**Live task:** https://emotion-labeling-task.vercel.app
 
 ## What it does
 
