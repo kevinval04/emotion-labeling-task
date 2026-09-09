@@ -1,0 +1,21 @@
+# Raw dataset downloads (regenerate with scripts/fetch_dataset.py)
+data/raw/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Node / Next.js (used from Phase 2 onward)
+node_modules/
+.next/
+out/
+.vercel/
+
+# Environment secrets
+.env
+.env*.local
+
+# OS noise
+.DS_Store
+Thumbs.db
